@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <fimi>
+				<pathToRequestFile>C:\Users\rakhim\Desktop\github\Fimi\SoapTest</pathToRequestFile>
+				<logPath>D:\FimiTest\Log</logPath>
+    <clerk></clerk>
+    <password></password>
+    <retaddress></retaddress>
+    <term></term>
+    <vendor>113</vendor>
+    <url></url>
+				<PANTest></PANTest>
+    <session>
+      <id>125257061</id>
+      <date>20230523161250</date>
+    </session>
+  </fimi>
+</Config>

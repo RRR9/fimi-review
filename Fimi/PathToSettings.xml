@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+		<pathToRequestFile>..\Soap</pathToRequestFile>
+		<LogPath>..\Log</LogPath>
+		<PathToRSAPublicPrivateKey>..\RSAPublicPrivate.xml</PathToRSAPublicPrivateKey>
+  <PathToConfigFimiTest>..\FimiTest.xml</PathToConfigFimiTest>
+  <PathToConfigFimi>..\Fimi.xml</PathToConfigFimi>
+</Config>

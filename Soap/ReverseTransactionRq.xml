@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+    <soap:Header/>
+    <soap:Body>
+        <fimi:ReverseTransactionRq>
+            <fimi:Request Ver="3.5" Product="FIMI" Encoding="UTF8" Session="" RetAddress="" Clerk="" Password="" Comment="Отмена транзакции">
+                <fimi1:Id></fimi1:Id>
+            </fimi:Request>
+        </fimi:ReverseTransactionRq>
+    </soap:Body>
+</soap:Envelope>

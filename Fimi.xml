@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <InitSessionRq>
+    <required>
+    </required>
+  </InitSessionRq>
+  <LogonRq>
+    <required>
+    </required>
+  </LogonRq>
+  <ReverseTransactionRq>
+    <required>
+      <InitSessionRq>
+        <url>http://***:22144/</url>
+        <Clerk attribute="true" place="fimi:Request">***</Clerk>
+        <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+        <Session output="" from="m0:Id" attribute="false" />
+      </InitSessionRq>
+    </required>
+    <url>http://***:22144/</url>
+    <Session input="" attribute="true" place="fimi:Request" />
+    <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+    <Clerk attribute="true" place="fimi:Request">***</Clerk>
+    <Password attribute="true" place="fimi:Request">***</Password>
+    <TranId input="" attribute="false" place="fimi1:Id" />
+    <Response output="" attribute="true" from="m1:Response" />
+    <ThisTranId output="" attribute="false" from="m0:ThisTranId" />
+  </ReverseTransactionRq>
+  <POSRequestRq>
+    <required>
+      <InitSessionRq>
+        <url>http://***:22143/</url>
+        <Clerk attribute="true" place="fimi:Request">***</Clerk>
+        <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+        <Session output="" from="m0:Id" attribute="false" />
+      </InitSessionRq>
+      <LogonRq>
+        <Session input="" place="fimi:Request" attribute="true" />
+        <url>http://***:22143/</url>
+        <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+        <Clerk attribute="true" place="fimi:Request">***</Clerk>
+        <Password attribute="true" place="fimi:Request">***</Password>
+      </LogonRq>
+    </required>
+    <url>http://***:22143/</url>
+    <Clerk attribute="true" place="m1:Request">***</Clerk>
+    <Password attribute="true" place="m1:Request">***</Password>
+    <RetAddress attribute="true" place="m1:Request">***</RetAddress>
+    <TermName attribute="false" place="m0:TermName">***</TermName>
+    <ToAccount attribute="false" place="m0:ToAccount">***</ToAccount>
+    <PAN attribute="false" place="m0:PAN" input="" />
+    <Amount attribute="false" place="m0:Amount" input="" />
+    <CVV2 attribute="false" place="m0:CVV2" input="" />
+    <TransactionNumber attribute="true" place="m1:Request" input="" />
+    <Track2 attribute="false" place="m0:Track2" input="" />
+    <!--<ExpDate attribute="false" place="" input=""/>-->
+    <Response output="" from="m1:Response" attribute="true" />
+    <AuthRespCode output="" from="m0:AuthRespCode" attribute="false" />
+    <ApprovalCode output="" from="m0:ApprovalCode" attribute="false" />
+    <ThisTranId output="" from="m0:ThisTranId" attribute="false" />
+  </POSRequestRq>
+  <GetCardInfoRq>
+    <required>
+      <InitSessionRq>
+        <url>http://***:22067/</url>
+        <Clerk attribute="true" place="fimi:Request">***</Clerk>
+        <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+        <Session output="" from="m0:Id" attribute="false" />
+      </InitSessionRq>
+    </required>
+    <url>http://***:22067/</url>
+    <Clerk attribute="true" place="fimi:Request">***</Clerk>
+    <Password attribute="true" place="fimi:Request">***</Password>
+    <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+    <Session input="" attribute="true" place="fimi:Request" />
+    <PAN input="" attribute="false" place="fimi1:PAN" />
+    <MBR output="" from="m0:FoundMBR" attribute="false" />
+    <ExpDate output="" from="m0:ExpDate" attribute="false" />
+    <NameOnCard output="" from="m0:NameOnCard" attribute="false" />
+    <InstName output="" from="m0:InstName" attribute="false" />
+    <Address output="" from="m0:Address" attribute="false" />
+    <LedgerBalance output="" from="m0:LedgerBalance" attribute="false" />
+  </GetCardInfoRq>
+  <CardVerification>
+    <required>
+    </required>
+    <url>http://***:22143/</url>
+    <Clerk attribute="true" place="fimi:Request">***</Clerk>
+    <Password attribute="true" place="fimi:Request">***</Password>
+    <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+    <TermName attribute="false" place="fimi1:TermName">***</TermName>
+    <PAN input="" attribute="false" place="fimi1:PAN" />
+    <Track2 input="" attribute="false" place="fimi1:Track2" />
+    <CVV2 input="" attribute="false" place="fimi1:CVV2" />
+    <Response output="" from="m1:Response" attribute="true" />
+    <ApprovalCode output="" from="m0:ApprovalCode" attribute="false" />
+    <AuthRespCode output="" from="m0:AuthRespCode" attribute="false" />
+    <AvailBalance output="" from="m0:AvailBalance" attribute="false" />
+  </CardVerification>
+  <P2P>
+    <required>
+    </required>
+    <url>http://***:22143/</url>
+    <Clerk attribute="true" place="fimi:Request">***</Clerk>
+    <Password attribute="true" place="fimi:Request">***</Password>
+    <RetAddress attribute="true" place="fimi:Request">***</RetAddress>
+    <TermName attribute="false" place="fimi1:TermName">***</TermName>
+    <PAN input="" attribute="false" place="fimi1:PAN" />
+    <PAN2 input="" attribute="false" place="fimi1:PAN2" />
+    <Amount input="" attribute="false" place="fimi1:Amount" />
+    <Response output="" from="m1:Response" attribute="true" />
+    <AuthRespCode output="" from="m0:AuthRespCode" attribute="false" />
+    <AvailBalance output="" from="m0:AvailBalance" attribute="false" />
+  </P2P>
+  <fimi>
+    <passwordMD5>***</passwordMD5>
+    <DBConnection>Data Source=(localdb)\MSSQLLocalDB;database=Fimi;Integrated Security=True</DBConnection>
+    <sessionPOSRequestRq>
+      <id>339768147</id>
+      <date>20231201145054</date>
+    </sessionPOSRequestRq>
+    <sessionReverseTransactionRq>
+      <id>332122408</id>
+      <date>20231025114612</date>
+    </sessionReverseTransactionRq>
+  </fimi>
+</Config>

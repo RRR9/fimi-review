@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+    <soap:Header/>
+    <soap:Body>
+        <fimi:POSRequestRq>
+            <fimi:Request Ver="3.5" Product="FIMI" Encoding="UTF8" RetAddress="***" Clerk="" Password="">
+                <fimi1:TranType>200</fimi1:TranType>
+                <fimi1:TranCode>135</fimi1:TranCode>
+                <fimi1:TermName></fimi1:TermName> <!--номер терминала монед-->
+                <fimi1:PAN></fimi1:PAN> <!--карта отправителя монед-->
+                <fimi1:PAN2></fimi1:PAN2> <!--карта получателя монед-->
+                <fimi1:Amount></fimi1:Amount> <!--сумма-->
+                <fimi1:EntryMode>011</fimi1:EntryMode>
+                <fimi1:Condition>86</fimi1:Condition>
+                <fimi1:FromAcctType>0</fimi1:FromAcctType>
+            </fimi:Request>
+        </fimi:POSRequestRq>
+    </soap:Body>
+</soap:Envelope>

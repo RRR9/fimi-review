@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope   xmlns:env="http://www.w3.org/2003/05/soap-envelope"   xmlns:m1="http://schemas.compassplus.com/two/1.0/fimi.xsd"   xmlns:m0="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+    <env:Body>
+        <m1:POSRequestRq>
+            <m1:Request Ver="3.5" Product="FIMI" Clerk="" Password="" RetAddress="" TransactionNumber=""  Comment="Оплата услуг">
+                <m0:TranType>200</m0:TranType>
+                <m0:TranCode>175</m0:TranCode>
+                <m0:TermName></m0:TermName>
+                <m0:PAN></m0:PAN>
+                <m0:FromAcctType>0</m0:FromAcctType>
+                <m0:ToAcctType>0</m0:ToAcctType>
+                <m0:Amount></m0:Amount>
+                <m0:CVV2></m0:CVV2>
+                <m0:ToAccount></m0:ToAccount>
+                <m0:Condition>0</m0:Condition>
+                <m0:Currency>972</m0:Currency>
+                <m0:EntryMode>9</m0:EntryMode>
+                <m0:Track2></m0:Track2>
+            </m1:Request>
+        </m1:POSRequestRq>
+    </env:Body>
+</env:Envelope>
